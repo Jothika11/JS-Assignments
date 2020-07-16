@@ -1,0 +1,111 @@
+<html>
+    <body>
+    <p><strong>Note:</strong> Check out the browser console by pressing the f12 key on the keyboard.</p>
+
+<script>
+    
+    console.log("STRING IN JAVASCRIPT");
+
+//replace 
+/*The string.replace() is an inbuilt function in JavaScript 
+which is used to replace a part of the given string with some another string or a regular expression. 
+The original string will remain unchanged.*/
+
+
+let str2="my hobbies are painting,cooking,dancing";
+console.log(str2.replace("painting","singing"));
+
+//slice 
+/*The string.slice() is an inbuilt function in javascript
+ which is used to return a part or slice of the given input string.*/
+
+let str4="hello World";
+console.log(str4.slice(3)); 
+
+//substring 
+/*The string.substring() is an inbuilt function in JavaScript
+ which is used to return the part of the given string from start index to end index. 
+ Indexing start from zero (0).*/
+
+let str1 = "Apple, Banana, Kiwi";
+console.log(str1.substring(7,13));
+
+//indexOf
+/*str.indexOf() function finds the index of the
+first occurrence of the argument string in the given string.
+The value returned is 0-based.*/
+
+
+let str = "Please locate where 'locate' occurs!";
+console.log(str.indexOf("locate"));
+
+//lastIndexOf
+/*str.lastIndexOf() function finds the index 
+of the last occurrence of the argument string in the given string. 
+The value returned is 0-based.*/
+
+let string = "Please locate where 'locate' occurs!";
+console.log(string.lastIndexOf("a"));
+
+//toUpperCase 
+ /*str.toUpperCase() function converts the entire string to Upper case. 
+This function does not affect any of the special characters, 
+digits and the alphabets that are already in upper case.*/
+
+let str3="my hobbies are painting,cooking,dancing";
+console.log(str3.toUpperCase());
+
+//concat
+/*str.concat() function is used to join two or more strings together in JavaScript.*/
+
+let text1="Hi";
+let text2="world";
+console.log(text1.concat(" ",text2));
+
+//split
+/*str.split() function is used to split the given string into array of strings 
+by separating it into substrings using a specified separator provided in the argument*/
+
+let str7="hello World";
+console.log(str7.split('e'));
+
+
+console.log("ARRAY IN JAVASCRIPT");
+
+let arr = ['Rita',false, 32, ['1','2']];
+let arr2 = ['Benz', 'Mahendra','Audi'];
+console.log(arr);
+
+//Changing an Array Element 
+
+let cars = ["Saab", "Volvo", "BMW"];
+cars[0] = "Opel";  //This statement changes the value of the first element in cars
+console.log(cars);        
+
+//Objects use names to access its "members".In this example,person.firstName returns John
+let person = {firstName:"John", lastName:"Doe", age:46};
+console.log(person["firstName"]);
+
+//Length property
+//The length property of an array returns the length of an array (the number of array elements)
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits.length);
+
+//Accessing the First Array Element
+let fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits[0]);
+
+//Accessing the Last Array Element
+let fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits2[fruits2.length-1]);
+
+
+//Adding Array Elements
+//The easiest way to add a new element to an array is using the push() method
+let fruits3= ["Banana", "Orange", "Apple", "Mango"];
+fruits3[fruits3.length] = "Lemon";
+console.log(fruits3)
+</script>
+</body>
+</html>
+
