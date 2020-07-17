@@ -1,0 +1,56 @@
+<html>
+    <body>
+       <h1>Day 3 Assignments</h1>
+       <h2>Question 3</h2>
+       <h3>Write a program to take marks as input from the user and grade him accordingly. Use Conditional
+        statements. Also the same code using switch or ternary</h3>
+    <p><strong>Note:</strong> Check out the browser console by pressing the f12 key on the keyboard for the answer</p>
+
+<script>
+
+//Using Conditional
+
+
+// let avg=50;
+let avg = Number(prompt("Enter your marks",0));
+if (avg < 40){
+    console.log(`Marks are ${avg} and grade is C`);      
+    } 
+   else if (avg < 60) {
+          console.log(`Marks are ${avg} and grade is B`); 
+  } else if (avg < 100) {
+          console.log(`Marks are ${avg} and grade is A`); 
+}
+
+
+//Using Switch case
+
+// let  mark = 50;
+
+let mark = Number(prompt("Enter your marks",0));
+switch (mark) {
+    case 40:
+        console.log(`Marks are ${mark} and grade is C`);
+        break;
+    case 50:
+        console.log(`Marks are ${mark} and grade is B`);
+        break;
+    case 100:
+        console.log(`Marks are ${mark} and grade is A`);
+        break;
+    default:
+        console.log(`Marks are ${mark} and grade is D`);
+}
+
+
+
+// Using Ternary Operators
+// Syntax: conditon ? value if true : value if false
+
+// let marks=50;
+let marks = Number(prompt("Enter your marks",0));
+console.log(marks >= 50 ? `Marks are ${marks} and grade is B`:`Marks are ${marks} and grade is A`);
+
+</script>
+</body>
+</html>
