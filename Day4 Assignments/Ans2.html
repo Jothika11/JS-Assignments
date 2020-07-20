@@ -1,0 +1,36 @@
+<html>
+  <body>
+<h2>Question 2</h2>
+<p><strong><h3>Destructure the following object<br></h3>
+   <h5>const student={  <br>
+    name:"Helsinki",<br>
+    age:24,<br>
+    project:{<br>
+        diceGame:"Two player dice game using Javascript"<br>
+    }<br>
+} <br></h5></strong></p>
+<h3><p><strong>Note:</strong> Check out the browser console by pressing the f12 key on the keyboard for the answer</p></h3>
+
+<script>
+
+// Destructuring Objects
+
+const student={
+    name:"Helsinki",
+    age:24,
+    project:{
+        diceGame:"Two player dice game using Javascript"
+    }
+}
+console.log(student.name);
+console.log(student.age);
+
+// const{project:{diceGame}}=student;
+// console.log(diceGame);
+
+const{name,age,project:{diceGame}}=student;
+console.log(name,age,diceGame);
+
+</script>
+</body>
+</html>
