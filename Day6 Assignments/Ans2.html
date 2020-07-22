@@ -1,0 +1,28 @@
+<html>
+  <body>
+<h2>Question 2</h2>
+<p>Write a program that will display the multiplication table of a number on the webpage in a proper
+    format. Take the input from the user.<br></p>
+<head>
+<script type="text/javascript">
+	function printTable(){
+			var num;
+			num=Number(document.getElementById('txtNumber').value);
+			for(var i=1; i<=10; i++){
+			var pTag= document.getElementById('pPrint');
+			pTag.innerHTML += (i + "x" +num+ "=" +i*num+ "<br>") 
+			}
+			}
+
+</script>
+</head>
+
+<body style="text-align: center;">
+		<h1>JavaScript - Function to Display Table of an entered Number.</h1>
+		<p><input type="text" id="txtNumber" placeholder="Enter number"/></p>
+		<p><input type="button" value="Print Table." onclick='printTable()'/>
+		<!--print numbers-->
+		<p id="pPrint"></p>
+</body>
+
+</html>
