@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quote Generator</title>
+    <h1>Question 3</h1>
+    <h2>Write a program to generate a quote randomly and display it on the web page in a proper format.</h2>
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+    <div id="quoteDisplay">
+    </div>
+    <button onclick="newQuote()">New Quote</button>
+    <script>
+        var quotes =[
+   'Be yourself; everyone else is already taken.<br>― Oscar Wilde',
+   'Two things are infinite: the universe and human stupidity; and Im not sure about the universe.<br>― Albert Einstein',
+   'So many books, so little time.<br> ― Frank Zappa',
+   'Be who you are and say what you feel, because those who mind dont matter, and those who matter dont mind.<br> ― Bernard M. Baruch',
+   'A room without books is like a body without a soul.<br>― Marcus Tullius Cicero',
+   'You know you are in love when you cant fall asleep because reality is finally better than your dreams.<br> ― Dr. Seuss',
+   'You only live once, but if you do it right, once is enough.<br> ― Mae West',
+   'Be the change that you wish to see in the world.<br> ― Mahatma Gandhi',
+   'In three words I can sum up everything I have learned about life: it goes on.<br> ― Robert Frost',
+   'If you want to know what a man like, take a good look at how he treats his inferiors, not his equals.<br> ― J.K. Rowling',
+   'If you tell the truth, you dont have to remember anything.<br> ― Mark Twain',
+   'A friend is someone who knows all about you and still loves you.<br> ― Elbert Hubbard',
+   'Always forgive your enemies; nothing annoys them so much.<br> ― Oscar Wilde',
+   'To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.<br> ― Ralph Waldo Emerson'
+ ]
+function newQuote(){
+    var randomNumber = Math.floor(Math.random()* (quotes.length));
+    document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+}
+    </script>
+</body>
+</html>
